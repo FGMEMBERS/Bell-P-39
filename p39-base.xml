@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim  include="Nasal/views.xml">
+ 
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <status>alpha</status>
+  
+    <fuel-fraction>1.0</fuel-fraction>
+  
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/Bell-P-39/Sounds/p39-sound.xml</path>
+    </sound>
+
+    <startup>
+     <splash-texture>Aircraft/Bell-P-39/p39-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/Bell-P-39/Models/p39.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Bell-P-39/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Bell P 39 Airacobra</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/p39-menu.xml"/>
+
+  </sim>
+
+  <yasim>
+    <p39>
+      <pilot-lb>128</pilot-lb>
+    </p39>
+  </yasim>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2070</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <controls>
+    <armament>
+      <trigger type="bool">false</trigger>
+      <master-arm type="bool">true</master-arm>
+      <position-norm type="int">1</position-norm>
+    </armament>
+    <flight>
+      <elevator-trim>-0.04</elevator-trim>
+    </flight>
+  </controls>
+
+  <input>
+    <keyboard include="Nasal/p39-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/Bell-P-39/Nasal/doors.nas</file>
+    </doors>
+    <p39>
+      <file>Aircraft/Bell-P-39/Nasal/liveries.nas</file>
+      <file>Aircraft/Bell-P-39/Nasal/light.nas</file>
+    </p39>
+    <guns>
+      <file>Aircraft/Bell-P-39/Nasal/weapons.nas</file>
+      <file>Aircraft/Bell-P-39/Nasal/revi.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>
+
