@@ -4,7 +4,7 @@
 
  <sim>
 
-  <description>Bell P 59 Airacomet (YASim)</description>
+  <description>Bell P39 Airacobra (YASim)</description>
   <flight-model>yasim</flight-model>
   <aero>p39-yasim</aero>
 

@@ -4,7 +4,7 @@
 <PropertyList include="p39-yasim-cnf.xml">
 
   <sim>
-    <description>Bell P 59 Airacomet</description>
+    <description>Bell P39 Airacobra</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
   </sim>
 
