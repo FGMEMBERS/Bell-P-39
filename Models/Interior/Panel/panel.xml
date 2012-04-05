@@ -11,23 +11,13 @@
     <!-- Objets transparents -->
   </animation>
 
-  <!-- ASI -->
+  <!-- ALT -->
   <model>
-    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.080 </y-m>
-      <z-m> -0.070 </z-m>
-    </offsets>
-  </model>
-
-  <!-- HDG -->
-  <model>
-    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m> -0.005 </x-m>
       <y-m> -0.070 </y-m>
-      <z-m>  0.020 </z-m>
+      <z-m>  0.105 </z-m>
     </offsets>
   </model>
 
@@ -36,8 +26,18 @@
     <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
-      <y-m> 0.080 </y-m>
-      <z-m> 0.100 </z-m>
+      <y-m> 0.070 </y-m>
+      <z-m> 0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RADIO COMPASS -->
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/radio-compass/radio-compass.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.070 </y-m>
+      <z-m>  0.010 </z-m>
     </offsets>
   </model>
 
@@ -45,29 +45,19 @@
   <model>
     <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.070 </y-m>
-      <z-m> 0.020 </z-m>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.070 </y-m>
+      <z-m>  0.010 </z-m>
     </offsets>
   </model>
 
-  <!-- ALT -->
+  <!-- ASI -->
   <model>
-    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.080 </y-m>
-      <z-m>  0.100 </z-m>
-    </offsets>
-  </model>
-
-  <!-- TURN -->
-  <model>
-    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/turn/turn.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.080 </y-m>
-      <z-m> -0.070 </z-m>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.099 </y-m>
+      <z-m> -0.086 </z-m>
     </offsets>
   </model>
 
@@ -75,9 +65,19 @@
   <model>
     <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m> -0.005 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.070 </z-m>
+      <z-m> -0.086 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.099 </y-m>
+      <z-m> -0.086 </z-m>
     </offsets>
   </model>
 
@@ -87,7 +87,7 @@
     <offsets>
       <x-m> -0.014 </x-m>
       <y-m> -0.080 </y-m>
-      <z-m> -0.150 </z-m>
+      <z-m> -0.171 </z-m>
     </offsets>
   </model>
 
@@ -97,7 +97,7 @@
     <offsets>
       <x-m> -0.014 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.150 </z-m>
+      <z-m> -0.171 </z-m>
     </offsets>
   </model>
 

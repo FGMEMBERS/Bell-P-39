@@ -6,8 +6,9 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>face</object-name>
     <object-name>fond</object-name>
+    <object-name>fond2</object-name>
+    <object-name>face</object-name>
     <object-name>visses</object-name>
 
     <!-- Objets transparents -->
@@ -23,13 +24,13 @@
 
   <animation> 
     <type>material</type>
+    <object-name>fond2</object-name>
     <object-name>face</object-name>
-    <object-name>fond</object-name>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -46,3 +47,4 @@
   </animation>
 
 </PropertyList>
+

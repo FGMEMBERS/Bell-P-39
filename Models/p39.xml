@@ -190,18 +190,17 @@
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Bell-P-39/Models/shadow.xml</path>
+    <offsets>
+      <x-m> -0.024 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.568 </z-m>
+    </offsets>
   </model>
 
   <!-- Intérieur -->
   <model>
     <path>Aircraft/Bell-P-39/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Effets de tir -->
@@ -212,9 +211,7 @@
       <x-m> -3.702 </x-m>
       <y-m> -0.199 </y-m>
       <z-m>  0.512 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -225,9 +222,7 @@
       <x-m> -1.957 </x-m>
       <y-m> -3.052 </y-m>
       <z-m> -0.469 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -238,9 +233,7 @@
       <x-m> -3.702 </x-m>
       <y-m>  0.199 </y-m>
       <z-m>  0.512 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -251,9 +244,7 @@
       <x-m> -1.957 </x-m>
       <y-m>  3.052 </y-m>
       <z-m> -0.469 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -264,9 +255,7 @@
       <x-m> -4.614 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.169 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> 180 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -309,8 +298,6 @@
       <x-m> -0.722 </x-m>
       <y-m> -0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
@@ -321,8 +308,6 @@
       <x-m> -0.545 </x-m>
       <y-m> -0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
@@ -333,8 +318,6 @@
       <x-m> -0.368 </x-m>
       <y-m> -0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
@@ -345,8 +328,6 @@
       <x-m> -0.191 </x-m>
       <y-m> -0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
@@ -357,8 +338,6 @@
       <x-m> -0.014 </x-m>
       <y-m> -0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
@@ -369,8 +348,6 @@
       <x-m>  0.163 </x-m>
       <y-m> -0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
       <heading-deg> -30 </heading-deg>
     </offsets>
   </model>
@@ -382,8 +359,6 @@
       <x-m> -0.722 </x-m>
       <y-m>  0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 30 </heading-deg>
     </offsets>
   </model>
@@ -394,8 +369,6 @@
       <x-m> -0.545 </x-m>
       <y-m>  0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 30 </heading-deg>
     </offsets>
   </model>
@@ -406,8 +379,6 @@
       <x-m> -0.368 </x-m>
       <y-m>  0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 30 </heading-deg>
     </offsets>
   </model>
@@ -418,8 +389,6 @@
       <x-m> -0.191 </x-m>
       <y-m>  0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 30 </heading-deg>
     </offsets>
   </model>
@@ -430,8 +399,6 @@
       <x-m> -0.014 </x-m>
       <y-m>  0.463 </y-m>
       <z-m>  0.248 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 30 </heading-deg>
     </offsets>
   </model>
@@ -442,8 +409,6 @@
       <x-m> 0.163 </x-m>
       <y-m> 0.463 </y-m>
       <z-m> 0.248 </z-m>
-      <roll-deg>     0 </roll-deg>
-      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 30 </heading-deg>
     </offsets>
   </model>
