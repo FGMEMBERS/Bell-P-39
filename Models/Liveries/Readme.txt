@@ -14,3 +14,8 @@ These liveries were made by : PD HOBSON 2012
 
 Thanks to him.
 
+RAF-P-39  : P-39 RAF 601 Sq. Duxford, 1941
+
+These liveries were made by : Herve 2012
+
+Thanks to him
