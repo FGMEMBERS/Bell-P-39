@@ -36,7 +36,7 @@
       <phi-min-deg>   -10 </phi-min-deg>
       <phi-max-deg>    50 </phi-max-deg>
       <speed-mps>
-        <value>4</value>
+        <value>6</value>
         <spread>3</spread>
       </speed-mps>
       <rotation-speed>
@@ -51,7 +51,7 @@
 
     <counter>
       <particles-per-sec>
-        <value>40</value>
+        <value>20</value>
         <spread>20</spread>
       </particles-per-sec>
     </counter>
@@ -62,10 +62,10 @@
           <red><value>   0.9 </value></red>
           <green><value> 0.9 </value></green>
           <blue><value>  0.9 </value></blue>
-          <alpha><value> 0.4 </value></alpha>
+          <alpha><value> 0.3 </value></alpha>
         </color>
         <size>
-          <value>0.1</value>
+          <value>0.01</value>
         </size>
       </start>
 
