@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Free French Air Force GC III/6 "Roussillon", 
+     1944, North African Coastal Command -->
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">GC III/6 "Roussillon" FFAF</name>
+        <texture>Liveries/Roussillon_FFAF.png</texture>
+        <specular>
+          <red>   0.05 </red>
+          <green> 0.05 </green>
+          <blue>  0.05 </blue>
+        </specular>
+        <emission>
+          <red>   0.1 </red>
+          <green> 0.1 </green>
+          <blue>  0.1 </blue>
+        </emission>
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Bell P 39 Airacobra - 2011 Emmanuel BARANGER
+
+     sources          : http://en.wikipedia.org/wiki/Bell_P-39_Airacobra
+
+     wingspan         :  34 ft 0 in ( 10.4 m    )
+     length           :  30 ft 2 in (  9.2 m    )
+     height           :  12 ft 5 in (  3.8 m    )
+     empty weight     :  5347 lb    ( 2425 kg   )
+     engine           : 1 Allison V-1710-85 liquid-cooled V-12 (1200 hp)
+     Maximum speed    :   329.7 kts (  605 km/h )
+-->
+
+<airplane mass="5347">
+
+  <!-- Approach configuration -->
+  <approach speed="87" aoa="8" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.1"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="1"/>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="315" alt="6000" fuel="0.5">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.7"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.6"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0"/>
+  </cruise>
+
+  <cockpit x="1.355" y="0.323" z="0.080"/>
+
+  <fuselage ax="4.056" ay="0" az="0.169" bx="-3.912" by="0" bz="0.224" width="0.880" taper="0.4" midpoint="0.3"/>
+
+  <wing x="0.540" y="0.187" z="-0.532" 
+        chord="2.559" 
+        length="5.015" 
+        taper="0.5"
+        sweep="-3"
+        dihedral="6"
+        camber="0.01">
+        <stall aoa="14" width="1" peak="1.5"/>
+        <flap0 start="0.19" end="0.560" lift="1.2" drag="1.25"/>
+        <flap1 start="0.56" end="0.925" lift="1.2" drag="1.1"/>
+
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+
+        <control-speed control="FLAP0" transition-time="2"/>
+  </wing>
+
+  <hstab x="-3.478" y="0" z="0.500" 
+         chord="1.373" 
+         length="2.116" 
+         taper="0.5"
+         sweep="9">
+         <stall aoa="12" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="2" drag="1.1"/>
+
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-3.825" y="0" z="0.106" 
+         chord="1.544"
+         length="1.649"
+         taper="0.5"
+         sweep="9">
+         <stall aoa="12" width="1" peak="1.5"/>
+         <flap0 start="0.02" end="0.9" lift="1.75" drag="1.35"/>
+
+         <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Allison_V-1710
+
+                 name              : Allison V-1710
+                 type              : 12-cylinder supercharged liquid-cooled 60 deg "Vee" piston aircraft engine
+                 power cruise      : 1475 hp at 3000 rpm
+                 weight            : 1395 lb    ( 633.5 kg )
+                 displacement      : 1710 cu in ( 28 L     )
+                 compression       : 6.65:1
+  -->
+  <propeller x="0.334" y="0" z="0.201" 
+             radius="1.7615"
+	     mass="1395" 
+	     moment="2.5"  
+	     cruise-speed="315" 
+	     cruise-rpm="2500"
+	     cruise-alt="6000" 
+	     cruise-power="1200"
+	     takeoff-power="1400" 
+	     takeoff-rpm="2700">
+             <actionpt x="4.161" y="0" z="0.169"/>
+             <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+             <piston-engine eng-rpm="3000" 
+                            eng-power="1475"
+                            displacement="1710" 
+                            compression="6.65"/>
+             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" src0="0" src1="1" dst0="0" dst1="1"/>
+             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
+             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
+             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" src0="0" src1="1" dst0="0.8" dst1="0.8"/>
+  </propeller>
+  
+  <!-- Noze wheel -->
+  <gear x="3.611" y="0" z="-1.920" 
+        compression="0.15" 
+        spring="0.8"
+        on-solid="1"
+        sfric="1"
+        dfric="1">
+        <control-input axis="/controls/flight/rudder" control="STEER" square="false"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+        <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+  </gear>
+
+  <!-- Left wheel -->
+  <gear x="0.515" y="-1.811" z="-1.716"
+        compression="0.2" 
+        spring="1.8" 
+        damp="0.03" 
+        on-solid="1" >
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+        <control-output control="EXTEND" prop="gear/gear[1]/position-norm"/>
+  </gear>
+
+  <!-- Right wheel -->
+  <gear x="0.515" y="1.811" z="-1.716"
+        compression="0.2" 
+        spring="1.8"
+        damp="0.03" 
+        on-solid="1" >
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-speed control="EXTEND" transition-time="7"/>
+        <control-output control="EXTEND" prop="gear/gear[2]/position-norm"/>
+  </gear>
+
+  <tank x="2" y="0" z="-0.310" capacity="2070" />
+
+  <!-- Mass distribution -->
+  <ballast x=" 4" y="0" z="-3" mass=" 800"/>
+  <ballast x="-4" y="0" z=" 3" mass="-100"/>
+  
+</airplane>
+
