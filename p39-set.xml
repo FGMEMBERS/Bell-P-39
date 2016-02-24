@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="p39-jsbsim-cnf.xml"> -->
-<PropertyList include="p39-yasim-cnf.xml">
+<PropertyList include="p39-base.xml">
 
   <sim>
 
     <description>Bell P39 Airacobra (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
 
+    <flight-model>yasim</flight-model>
+    <aero>p39-yasim</aero>
+    
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 1 </systems>
@@ -18,4 +20,3 @@
   </sim>
 
 </PropertyList>
-
