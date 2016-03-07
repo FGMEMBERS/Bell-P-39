@@ -6,7 +6,7 @@ English/Français
 A little history
 ================
 
-Bell P 59 Airacomet
+Bell P 39 Airacobra
 ===================
 
 Manufacturer                  : 
@@ -29,9 +29,10 @@ Thanks
 
 ===============
 BARANGER Emmanuel
-June, 27, 2010. 
+April, 09, 2011
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 [Français]
@@ -40,7 +41,7 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 
-Bell P 59 Airacomet
+Bell P 39 Airacobra
 ===================
 
 Constructeur                  :
@@ -64,7 +65,8 @@ Remerciements
 
 ===============
 BARANGER Emmanuel
-27 Juin 2010.
+09 Avril 2011
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr

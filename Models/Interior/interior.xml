@@ -10,29 +10,30 @@
     <object-name>inttour</object-name>
     <object-name>intporteG</object-name>
     <object-name>intporteD</object-name>
-
+    <object-name>planchet</object-name>
+    
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Bell-P-39/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitreporteG</object-name>
     <object-name>intvitreporteD</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Bell-P-39/Models/Pilot/pilot.xml</path>
@@ -61,9 +62,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntPorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>IntPorteGauche</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor> -65 </factor>
     <axis>
       <x1-m> -1.742 </x1-m>
@@ -82,9 +97,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntPorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>IntPorteDroite</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> -65 </factor>
     <axis>
       <x1-m> -1.730 </x1-m>
@@ -97,4 +126,3 @@
   </animation>
 
 </PropertyList>
-

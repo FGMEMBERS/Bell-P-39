@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList> 
-  
+
   <fx> 
-    
+
     <crank> 
       <name>engstart</name>
       <path>Sounds/engstart.wav</path>
@@ -21,7 +21,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-    
+
     <crank> 
       <name>cough</name>
       <path>Sounds/coughing.wav</path>
@@ -39,14 +39,14 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-    
+
     <engine> 
       <name>engine idle rpm</name>
       <mode>looped</mode>
       <path>Aircraft/Bell-P-39/Sounds/merlin_rpm1.wav</path>
       <condition> 
         <property>/engines/engine/running</property>
-        <less-than> 
+       <less-than> 
           <property>/engines/engine/rpm</property>
           <value>1100</value>
         </less-than>
@@ -76,7 +76,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-    
+
     <engine-2> 
       <name>engine low rpm</name>
       <mode>looped</mode>
@@ -113,7 +113,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-2>
-    
+
     <!-- -->
     <engine-4> 
       <name>engine high rpm</name>
@@ -127,7 +127,7 @@
         </greater-than-equals>
       </condition>
       <volume> 
-        <property>/orientation/alpha-deg</property>
+       <property>/orientation/alpha-deg</property>
         <type>log</type>
         <min>1.0</min>
         <max>1.5</max>
@@ -147,7 +147,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-4>
-    
+
     <engine-0> 
       <name>engine shut down rpm</name>
       <path>Aircraft/Bell-P-39/Sounds/merlin_shutdown.wav</path>
@@ -175,7 +175,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-0>
-    
+
     <rumble> 
       <name>rumble</name>
       <mode>looped</mode>
@@ -196,7 +196,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </rumble>
-    
+
     <gear> 
       <name>gear</name>
       <mode>in-transit</mode>
@@ -205,7 +205,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </gear>
-    
+  
     <squeal> 
       <name>squeal</name>
       <path>Sounds/squeal.wav</path>
@@ -239,7 +239,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </squeal>
-    
+
     <flap> 
       <name>flaps</name>
       <mode>in-transit</mode>
@@ -251,7 +251,7 @@
       <reference-dist>10.0</reference-dist>
       <max-dist>20.0</max-dist>
     </flap>
-    
+
     <canopy> 
       <name>canopy slide</name>
       <mode>in-transit</mode>
@@ -265,7 +265,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </canopy>
-    
+
     <wind-canopy-closed> 
       <name>wind</name>
       <mode>looped</mode>
@@ -298,7 +298,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </wind-canopy-closed>
-    
+
     <wind-canopy-open> 
       <name>wind-loud</name>
       <mode>looped</mode>
@@ -331,7 +331,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </wind-canopy-open>
-    
+
     <stall> 
       <name>gear up warn</name>
       <mode>looped</mode>
@@ -359,79 +359,7 @@
       <reference-dist>10.0</reference-dist>
       <max-dist>20.0</max-dist>
     </stall>
-    
-    <click> 
-      <name>mag left click down</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <property>controls/engines/engine/mag-switch-left</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>mag left click up</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/engines/engine/mag-switch-left</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>mag right click down</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <property>controls/engines/engine/mag-switch-right</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>mag right click up</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/engines/engine/mag-switch-right</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>rgs main click down</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <property>controls/switches/gun-sight-main</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>rgs main click up</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/switches/gun-sight-main</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-      </volume>
-    </click>
-    
+
     <guns> 
       <name>gunfire</name>
       <mode>looped</mode>
@@ -445,35 +373,7 @@
         <max>1.0</max>
       </volume>
     </guns>
-    
-    <click> 
-      <name>nav lights click down</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <property>controls/lighting/nav-lights</property>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-        <min>0.1</min>
-        <max>0.9</max>
-      </volume>
-    </click>
-    
-    <click> 
-      <name>nav lights click up</name>
-      <path>Aircraft/Bell-P-39/Sounds/click.wav</path>
-      <condition> 
-        <not> 
-          <property>controls/lighting/nav-lights</property>
-        </not>
-      </condition>
-      <volume> 
-        <factor>1.0</factor>
-        <min>0.1</min>
-        <max>0.9</max>
-      </volume>
-    </click>
-    
+
   </fx>
-  
+
 </PropertyList>

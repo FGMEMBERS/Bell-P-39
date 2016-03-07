@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.722 </x-m>
+      <y-m> -0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.545 </x-m>
+      <y-m> -0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.368 </x-m>
+      <y-m> -0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.191 </x-m>
+      <y-m> -0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.014 </x-m>
+      <y-m> -0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m>  0.163 </x-m>
+      <y-m> -0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> -30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.722 </x-m>
+      <y-m>  0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> 30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.545 </x-m>
+      <y-m>  0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> 30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.368 </x-m>
+      <y-m>  0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> 30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.191 </x-m>
+      <y-m>  0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> 30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -0.014 </x-m>
+      <y-m>  0.463 </y-m>
+      <z-m>  0.248 </z-m>
+      <heading-deg> 30 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Bell-P-39/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 0.163 </x-m>
+      <y-m> 0.463 </y-m>
+      <z-m> 0.248 </z-m>
+      <heading-deg> 30 </heading-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>
