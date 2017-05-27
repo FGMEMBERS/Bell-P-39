@@ -9,6 +9,17 @@
 
     <flight-model>yasim</flight-model>
     <aero>p39-yasim</aero>
+
+    <tags>
+      <tag>bell</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>single-engine</tag>
+      <tag>piston</tag>
+      <tag>fighter</tag>
+      <tag>ww2</tag>
+    </tags>
     
     <rating>
       <FDM type="int">     2 </FDM>
